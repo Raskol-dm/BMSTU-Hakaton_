@@ -5,7 +5,7 @@
 
 Доступ к [Jupyter]( http://195.19.36.68:8888/ )
 
-[ ipython parallel ] (https://github.com/ipython/ipyparallel)
+[ ipython parallel ](https://github.com/ipython/ipyparallel)
 
 Для работы с Jupyter, если страница не работает:
 
