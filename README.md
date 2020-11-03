@@ -1,6 +1,8 @@
 # bmstu-hack-2020
 
 
+VMWare страница [входа](https://195.19.40.127/vsphere-client/?csp)
+
 Хакатон [мануал с заданиями]( https://alexbmstu.github.io/2020/)
 
 Доступ к [Jupyter]( http://195.19.36.68:8888/ )
