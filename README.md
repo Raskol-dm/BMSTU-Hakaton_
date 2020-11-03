@@ -9,11 +9,11 @@ https://alexbmstu.github.io/2020/
 
 1. Вам нужно зайти на сервер через SSH либо через VMWare Local-Machine:
 
-ssh team02@195.19.36.68 -p 2022
+bash'''ssh team02@195.19.36.68 -p 2022'''
 
 2. Вам необходимо выполнить команду
 
-jupyter notebook &»./server-log/jupyter.log
+bash'''jupyter notebook &»./server-log/jupyter.log'''
 
 Вы запустите Jupyter.
 
