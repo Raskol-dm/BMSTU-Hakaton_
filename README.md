@@ -25,4 +25,6 @@ jupyter notebook &>>./server-log/jupyter.log
 
 Вы запустите Jupyter.
 
+Также это возможно через VS Code
+
 Have fun! 🔥
