@@ -1,0 +1,5 @@
+train: ../pistols_dataset/export/train
+val: ../pistols_dataset/export/validation
+
+nc: 1
+names: ['pistol']
