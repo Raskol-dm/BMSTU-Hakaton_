@@ -1,0 +1,34 @@
+/home/team02/.conda/envs/py37/lib/python3.7/site-packages/torch/cuda/__init__.py:52: UserWarning: CUDA initialization: Found no NVIDIA driver on your system. Please check that you have an NVIDIA GPU and installed a driver from http://www.nvidia.com/Download/index.aspx (Triggered internally at  /opt/conda/conda-bld/pytorch_1603729138878/work/c10/cuda/CUDAFunctions.cpp:100.)
+  return torch._C._cuda_getDeviceCount() > 0
+Namespace(batch_size=1, checkpoint_model=None, class_path='config/custom.names', conf_thres=0.8, image_folder='./test_images', img_size=416, model_def='config/yolov3-custom.cfg', n_cpu=0, nms_thres=0.4, weights_path='./checkpoints/yolov3_ckpt_450d.pth')
+
+Performing object detection:
+	+ Batch 0, Inference Time: 0:00:07.414984
+	+ Batch 1, Inference Time: 0:00:05.396416
+
+Saving images:
+(0) Image: './test_images/117866_ON MODEL.png'
+(1) Image: './test_images/Nordace_Seina_Model_Smart_Backpack_20.jpg'
+/home/team02/.conda/envs/py37/lib/python3.7/site-packages/torch/cuda/__init__.py:52: UserWarning: CUDA initialization: Found no NVIDIA driver on your system. Please check that you have an NVIDIA GPU and installed a driver from http://www.nvidia.com/Download/index.aspx (Triggered internally at  /opt/conda/conda-bld/pytorch_1603729138878/work/c10/cuda/CUDAFunctions.cpp:100.)
+  return torch._C._cuda_getDeviceCount() > 0
+Namespace(batch_size=1, checkpoint_model=None, class_path='config/custom.names', conf_thres=0.8, image_folder='./output', img_size=416, model_def='config/yolov3-custom.cfg', n_cpu=0, nms_thres=0.4, weights_path='./checkpoints/yolov3_ckpt_450d.pth')
+
+Performing object detection:
+Traceback (most recent call last):
+  File "detect.py", line 77, in <module>
+    detections = model(input_imgs)
+  File "/home/team02/.conda/envs/py37/lib/python3.7/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/team02/day4/PyTorch-YOLOv3/models.py", line 255, in forward
+    x = module(x)
+  File "/home/team02/.conda/envs/py37/lib/python3.7/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/team02/.conda/envs/py37/lib/python3.7/site-packages/torch/nn/modules/container.py", line 117, in forward
+    input = module(input)
+  File "/home/team02/.conda/envs/py37/lib/python3.7/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/team02/.conda/envs/py37/lib/python3.7/site-packages/torch/nn/modules/conv.py", line 423, in forward
+    return self._conv_forward(input, self.weight)
+  File "/home/team02/.conda/envs/py37/lib/python3.7/site-packages/torch/nn/modules/conv.py", line 420, in _conv_forward
+    self.padding, self.dilation, self.groups)
+RuntimeError: Given groups=1, weight of size [32, 3, 3, 3], expected input[1, 4, 416, 416] to have 3 channels, but got 4 channels instead
